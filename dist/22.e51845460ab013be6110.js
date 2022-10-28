@@ -1,0 +1,16 @@
+/*! For license information please see 22.e51845460ab013be6110.js.LICENSE.txt */
+"use strict";(self.webpackChunkmv_template=self.webpackChunkmv_template||[]).push([[22],{310:(t,e,s)=>{s.d(e,{Z:()=>l});var i=s(5862),r=s(3790),o=(s(7277),s(8916),s(6594),s(6644));const n={rowsPerPage:10,sortFields:[],search:{field:null,value:null}};class l extends i.oi{static get properties(){return{entity:{type:Object,attribute:!1},entities:{type:Object,attribute:!1},permissions:{type:Object,attribute:!1},auth:{type:Object,attribute:!1},selectedRows:{type:Array,attribute:!1}}}static get styles(){return i.iv``}constructor(){super(),this.auth=null,this.entity={...r.V4},this.pages=1,this.currentPage=1,this.rowsPerPage=n.rowsPerPage,this.rows=[],this.messageDialog={...r.kZ},this.confirmDialog={...r.kZ},this.filter={DEFAULT_FILTER:n},this.selectedRows=[]}render(){return i.dy`
+      <mv-container>
+        <list-content
+          selectable
+          with-checkbox
+          .auth="${this.auth}"
+          .entity="${this.entity}"
+          .entities="${this.entities}"
+          .selected-rows="${this.selectedRows}"
+          @new-item="${this.newItem}"
+          @edit-item="${this.editRow}"
+          @row-click="${this.selectRow}"
+        ></list-content>
+      </mv-container>
+    `}newItem=()=>{history.pushState(null,"",`${o.BASE_PATH}/${this.entity.code}/new`),window.router.goto(`${o.BASE_PATH}/${this.entity.code}/new`)};editRow=t=>{const{detail:{row:e}}=t;history.pushState(null,"",`${o.BASE_PATH}/${this.entity.code}/update/${e.uuid}`),window.router.goto(`${o.BASE_PATH}/${this.entity.code}/update/${e.uuid}`)};selectRow=t=>{const{detail:{added:e,removed:s}}=t;this.selectedRows=[...this.selectedRows.filter((t=>!(s||[]).some((e=>e.uuid===t.uuid)))),...e||[]]}}customElements.define("list-page-template",l)},7521:(t,e,s)=>{s.d(e,{WI:()=>o});const i=[];for(let t=0;t<256;t++)i[t]=(t>>4&15).toString(16)+(15&t).toString(16);new WeakMap,new Map;let r=new class{constructor(){this.settled=!1,this.promise=new Promise(((t,e)=>{this._resolve=t,this._reject=e}))}resolve(t){this.settled=!0,this._resolve(t)}reject(t){this.settled=!0,this._reject(t)}};r.resolve();let o=t=>{return"string"!=typeof(e=t)&&"strTag"in e?((t,e,s)=>{let i=t[0];for(let r=1;r<t.length;r++)i+=e[s?s[r-1]:r-1],i+=t[r];return i})(t.strings,t.values):t;var e}},7599:(t,e,s)=>{s.d(e,{oi:()=>n.oi,iv:()=>r.iv,dy:()=>o.dy});var i,r=s(7898),o=s(3692),n=s(8922);null===(i=window.HTMLSlotElement)||void 0===i||i.prototype.assignedElements;console.warn("The main 'lit-element' module entrypoint is deprecated. Please update your imports to use the 'lit' package: 'lit' and 'lit/decorators.ts' or import from 'lit-element/lit-element.ts'. See https://lit.dev/msg/deprecated-import-path for more information.")},2274:(t,e,s)=>{s.r(e),s.d(e,{default:()=>o});var i=s(5862),r=s(310);class o extends r.Z{static get properties(){return{...super.properties}}static get styles(){return[super.styles,i.iv``]}}customElements.define("test-cet-list-page",o)}}]);
